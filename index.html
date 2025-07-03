@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada, National College for Digital Skills</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light blue-gray background */
+            color: #334155; /* Dark slate gray text */
+        }
+        .page-section {
+            display: none; /* Hide all pages by default */
+        }
+        .page-section.active {
+            display: block; /* Show active page */
+        }
+        .nav-link.active {
+            font-weight: 600; /* Semi-bold for active nav link */
+            color: #7c3aed; /* Violet colour for active link */
+            border-bottom: 2px solid #7c3aed; /* Underline active link */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 sticky top-0 z-50">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="text-2xl font-bold text-violet-700 mb-4 md:mb-0">
+                Ada, National College for Digital Skills
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center space-x-4 md:space-x-6">
+                    <li><a href="#home" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="home">Home</a></li>
+                    <li><a href="#about" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="about">About Us</a></li>
+                    <li><a href="#sixth-form" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="sixth-form">6th Form</a></li>
+                    <li><a href="#apprenticeships" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="apprenticeships">Apprenticeships</a></li>
+                    <li><a href="#locations" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="locations">Locations</a></li>
+                    <li><a href="#impact" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="impact">Our Impact</a></li>
+                    <li><a href="#news" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="news">News & Events</a></li>
+                    <li><a href="#contact" class="nav-link text-gray-700 hover:text-violet-600 transition-colors duration-200 py-2" data-page="contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-6 md:px-12 py-8">
+
+        <!-- Home Section -->
+        <section id="home" class="page-section active bg-white p-8 rounded-lg shadow-md mb-8">
+            <h1 class="text-4xl font-extrabold text-violet-800 mb-6">Empowering the Next Generation of Digital Talent</h1>
+            <img src="https://placehold.co/1200x400/ede9fe/7c3aed?text=Students+Collaborating+on+Digital+Projects" alt="Students Collaborating on Digital Projects" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                Ada, National College for Digital Skills, is dedicated to nurturing diverse talent and preparing them for successful careers in the digital economy. With campuses in London Victoria and Manchester Ancoats, we offer a unique blend of academic rigour and practical, industry-led experience.
+            </p>
+            <p class="text-lg leading-relaxed mb-4">
+                Whether through our specialist Sixth Form or our innovative Apprenticeship programmes, Ada provides a pathway for young people to develop cutting-edge digital skills, connect with leading tech companies, and become the innovators of tomorrow.
+            </p>
+            <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-3">Industry-Led Curriculum</h3>
+                    <p class="text-gray-600">Our courses are co-designed with industry partners to ensure relevance and employability.</p>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-purple-700 mb-3">Real-World Experience</h3>
+                    <p class="text-gray-600">Students gain practical skills through projects, work placements, and apprenticeships.</p>
+                </div>
+                <div class="bg-pink-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-pink-700 mb-3">Diverse & Inclusive Community</h3>
+                    <p class="text-gray-600">We foster an environment where all students can thrive and reach their full potential.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">About Ada, National College for Digital Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6 items-center">
+                <div>
+                    <p class="text-lg leading-relaxed mb-4">
+                        Ada, National College for Digital Skills, was founded with a clear mission: to address the growing digital skills gap in the UK by educating and empowering a new generation of diverse talent. Since our establishment, we have been at the forefront of digital education, blending academic excellence with practical industry relevance.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Mission</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        To inspire and equip young people from all backgrounds with the digital skills they need to thrive in a rapidly evolving world, and to become the innovators and leaders of tomorrow.
+                    </p>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Vision</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        To be the leading national college for digital skills, renowned for our inclusive approach, industry impact, and the exceptional talent we produce.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://placehold.co/600x400/d1fae5/065f46?text=Ada+College+Campus+Overview" alt="Ada College Campus Overview" class="w-full h-auto rounded-lg shadow-md object-cover">
+                </div>
+            </div>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Values</h3>
+            <ul class="list-disc list-inside text-lg leading-relaxed mb-4 pl-4">
+                <li><span class="font-medium text-violet-700">Creativity:</span> Fostering imaginative problem-solving and innovative thinking.</li>
+                <li><span class="font-medium text-violet-700">Collaboration:</span> Encouraging teamwork and shared learning experiences.</li>
+                <li><span class="font-medium text-violet-700">Curiosity:</span> Inspiring a lifelong passion for learning and exploration in digital fields.</li>
+                <li><span class="font-medium text-violet-700">Rigour:</span> Upholding high academic standards and meticulous attention to detail.</li>
+                <li><span class="font-medium text-violet-700">Resilience:</span> Building the strength and adaptability to overcome challenges in a dynamic industry.</li>
+            </ul>
+        </section>
+
+        <!-- 6th Form Section -->
+        <section id="sixth-form" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">Ada Sixth Form: Your Digital Future Starts Here</h2>
+            <img src="https://placehold.co/1200x350/f5d0fe/7c3aed?text=Sixth+Form+Students+Learning+Coding" alt="Sixth Form Students Learning Coding" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                Our specialist Sixth Form, based at our vibrant London Victoria campus, offers a unique post-16 education experience focused on preparing students for university or high-level apprenticeships in the digital sector. We combine a rigorous academic curriculum with hands-on, project-based learning.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-purple-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-4">Curriculum Highlights</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Students choose from a range of A-Levels and BTECs, including Computer Science, Maths, Further Maths, and Digital Production. Our curriculum is designed to build a strong foundation in computational thinking and practical application.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>A-Level Computer Science</li>
+                        <li>A-Level Mathematics & Further Mathematics</li>
+                        <li>BTEC Extended Diploma in Digital Production</li>
+                        <li>Project-Based Learning & Hackathons</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-purple-700 mb-4">Student Life & Support</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Beyond academics, Ada offers a supportive and engaging environment. Students benefit from dedicated pastoral care, career guidance, and opportunities to participate in extracurricular activities and industry workshops.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Personalised Career Guidance</li>
+                        <li>University Application Support</li>
+                        <li>Industry Mentoring</li>
+                        <li>Student Societies & Events</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apprenticeships Section -->
+        <section id="apprenticeships" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">Digital Apprenticeships: Learn, Earn, and Grow</h2>
+            <img src="https://placehold.co/1200x350/e0e7ff/4338ca?text=Apprentices+Working+in+Tech+Environment" alt="Apprentices Working in Tech Environment" class="w-full h-auto rounded-lg shadow-md mb-6 object-cover">
+            <p class="text-lg leading-relaxed mb-4">
+                Ada's Apprenticeship programmes provide an unparalleled opportunity to gain a qualification, earn a salary, and kickstart a career in tech. Available in both London Victoria and Manchester Ancoats, our apprenticeships combine on-the-job training with expert tuition.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Our Apprenticeship Programmes</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We offer a range of Level 3 and Level 4 apprenticeships in high-demand digital roles, ensuring our apprentices develop skills directly applicable to the modern tech industry.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Software Development Apprenticeship</li>
+                        <li>Data Analyst Apprenticeship</li>
+                        <li>IT Support Technician Apprenticeship</li>
+                        <li>Digital Marketing Apprenticeship</li>
+                    </ul>
+                </div>
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Partnering with Industry Leaders</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Ada collaborates with a wide array of industry partners, from global tech giants to innovative startups, providing apprentices with invaluable experience and networking opportunities.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Access to Top Tech Companies</li>
+                        <li>Mentorship from Industry Professionals</li>
+                        <li>Guaranteed Work Experience</li>
+                        <li>Pathways to Permanent Employment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section id="locations" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">Our Campuses: Hubs of Digital Innovation</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Ada operates from two state-of-the-art campuses, strategically located in key digital hubs across the UK. Both sites provide modern learning environments equipped with cutting-edge technology and facilities designed to foster creativity and collaboration.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">London Victoria Campus</h3>
+                    <img src="https://placehold.co/400x250/dbeafe/3b82f6?text=London+Victoria+Campus" alt="London Victoria Campus" class="w-full h-auto rounded-lg shadow-sm mb-4 object-cover">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our London Victoria campus is home to our specialist Sixth Form and a thriving Apprenticeship provision. Located in the heart of London, it offers excellent transport links and proximity to many leading tech companies.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Modern Classrooms & Labs</li>
+                        <li>Dedicated Student Hubs</li>
+                        <li>Close to Tech & Creative Industries</li>
+                        <li>Excellent Public Transport Access</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Manchester Ancoats Campus</h3>
+                    <img src="https://placehold.co/400x250/bfdbfe/1d4ed8?text=Manchester+Ancoats+Campus" alt="Manchester Ancoats Campus" class="w-full h-auto rounded-lg shadow-sm mb-4 object-cover">
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Situated in the vibrant Ancoats area, Manchester's digital and creative quarter, our Manchester campus focuses on delivering high-quality Apprenticeship programmes. It's a dynamic environment, surrounded by innovative businesses.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Industry-Standard Facilities</li>
+                        <li>Collaborative Project Spaces</li>
+                        <li>Part of Manchester's Digital Ecosystem</li>
+                        <li>Strong Links with Northern Tech Firms</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Impact Section -->
+        <section id="impact" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">Our Impact: Shaping the Digital Future</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Ada is more than just a college; we are a catalyst for change in the digital landscape. Our impact is measured not only by the success of our students but also by our contribution to a more diverse, skilled, and innovative tech sector.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Student Success Stories</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Our alumni go on to achieve incredible things, securing roles at top tech companies, pursuing higher education, and even founding their own startups.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>High Progression Rates to University & Employment</li>
+                        <li>Alumni in Leading Tech Roles (e.g., Google, Amazon, BBC)</li>
+                        <li>Entrepreneurial Ventures</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-2xl font-semibold text-green-700 mb-4">Industry & Community Contribution</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We actively engage with industry to ensure our curriculum meets their needs and contribute to broader initiatives promoting digital literacy and diversity in tech.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 pl-4">
+                        <li>Addressing the UK Digital Skills Gap</li>
+                        <li>Promoting Diversity & Inclusion in Tech</li>
+                        <li>Partnerships with Local Businesses & Organisations</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- News & Events Section -->
+        <section id="news" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">News & Events at Ada</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Stay up-to-date with the latest happenings at Ada, National College for Digital Skills. From student achievements and industry partnerships to upcoming open days and workshops, find all our news here.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Ada Student Wins National Coding Competition</h3>
+                    <p class="text-gray-600 text-sm mb-3">25th June 2025</p>
+                    <p class="text-gray-700">Congratulations to our Year 12 student, Emily R., who secured first place in the 'Future Coders Challenge'...</p>
+                    <a href="#" class="text-violet-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">New Partnership with Tech Innovator 'Synapse AI'</h3>
+                    <p class="text-gray-600 text-sm mb-3">10th June 2025</p>
+                    <p class="text-gray-700">We're thrilled to announce our collaboration with Synapse AI, offering new apprenticeship opportunities...</p>
+                    <a href="#" class="text-violet-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Open Day: Discover Our London Victoria Campus</h3>
+                    <p class="text-gray-600 text-sm mb-3">5th July 2025</p>
+                    <p class="text-gray-700">Join us on 15th September to explore our facilities, meet staff, and learn about our Sixth Form...</p>
+                    <a href="#" class="text-violet-600 hover:underline mt-3 inline-block">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact" class="page-section bg-white p-8 rounded-lg shadow-md mb-8">
+            <h2 class="text-4xl font-extrabold text-violet-800 mb-6">Contact Ada, National College for Digital Skills</h2>
+            <p class="text-lg leading-relaxed mb-4">
+                Have a question about our courses, admissions, or partnerships? Get in touch with us using the details below or fill out our enquiry form.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-3">Our Campuses</h3>
+                    <div class="mb-4">
+                        <h4 class="text-xl font-semibold text-violet-700 mb-1">London Victoria Campus</h4>
+                        <p class="text-gray-700">101 Digital Way,</p>
+                        <p class="text-gray-700">London Victoria, SW1E 5JE</p>
+                        <p class="text-700">United Kingdom</p>
+                        <p class="text-gray-700">Phone: +44 20 7123 4567</p>
+                        <p class="text-gray-700">Email: <a href="mailto:london@ada.ac.uk" class="text-violet-600 hover:underline">london@ada.ac.uk</a></p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-xl font-semibold text-violet-700 mb-1">Manchester Ancoats Campus</h4>
+                        <p class="text-gray-700">202 Tech Hub,</p>
+                        <p class="text-gray-700">Manchester Ancoats, M4 6WS</p>
+                        <p class="text-gray-700">United Kingdom</p>
+                        <p class="text-gray-700">Phone: +44 161 987 6543</p>
+                        <p class="text-700">Email: <a href="mailto:manchester@ada.ac.uk" class="text-violet-600 hover:underline">manchester@ada.ac.uk</a></p>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-xl font-semibold text-gray-800 mb-2">General Enquiries</h4>
+                        <p class="text-gray-700">Email: <a href="mailto:info@ada.ac.uk" class="text-violet-600 hover:underline">info@ada.ac.uk</a></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="2xl font-semibold text-gray-800 mb-3">Send Us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                            <input type="text" id="name" name="name" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-violet-500" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                            <input type="email" id="email" name="email" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-violet-500" placeholder="your.email@example.com">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-gray-700 text-sm font-bold mb-2">Subject:</label>
+                            <input type="text" id="subject" name="subject" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-violet-500" placeholder="Subject of your message">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                            <textarea id="message" name="message" rows="5" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-violet-500" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 px-6 md:px-12 mt-auto">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Ada, National College for Digital Skills. All rights reserved.</p>
+            <p class="mt-2 text-sm">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageSections = document.querySelectorAll('.page-section');
+
+            // Function to show a specific page and update active nav link
+            function showPage(pageId) {
+                pageSections.forEach(section => {
+                    section.classList.remove('active');
+                });
+                const activePage = document.getElementById(pageId);
+                if (activePage) {
+                    activePage.classList.add('active');
+                    // Scroll to the top of the page content
+                    activePage.scrollIntoView({ behaviour: 'smooth', block: 'start' });
+                }
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                const activeNavLink = document.querySelector(`.nav-link[data-page="${pageId}"]`);
+                if (activeNavLink) {
+                    activeNavLink.classList.add('active');
+                }
+            }
+
+            // Event listeners for navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevent default anchor link behaviour
+                    const pageId = this.getAttribute('data-page');
+                    showPage(pageId);
+                });
+            });
+
+            // Handle initial page load based on URL hash or default to 'home'
+            const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home';
+            showPage(initialPage);
+        });
+    </script>
+</body>
+</html>
